@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  student-service:
+    build: ./student
+    volumes:
+      - ./student:/usr/src/app
+    ports:
+      - 5001:80
+
+  
