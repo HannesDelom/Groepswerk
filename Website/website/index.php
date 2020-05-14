@@ -7,7 +7,7 @@
         <h1>Welcome to my school</h1>
         <ul>
             <?php
-            $json = file_get_contents('35.205.124.220');
+            $json = file_get_contents('http://35.205.124.220/');
             $obj = json_decode($json);
             $students = $obj->student;
             foreach ($student as $students) {
